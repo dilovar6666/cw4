@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
+
 <body>
-    <header class="flex items-center justify-between p-[20px]">
+    <header class="flex items-center justify-between p-[20px] max-w-[1250px]  m-auto">
         <div class="flex items-center gap-[20px]">
-        <div><img src="./forimg/LogoBlack.png" alt=""></div>
-        <nav class="flex gap-[20px] text-[18px] font-[400] text-[#151515]">
-            <p>About us</p>
-            <p>How it works</p>
-            <p>Pricing</p>
-            <p>FAQs</p>
-            <p></p>
-        </nav>
+            <div><img src="./forimg/LogoBlack.png" alt=""></div>
+            <nav class="flex gap-[20px] text-[18px] font-[400] text-[#151515] hidden lg:flex">
+                <p>About us</p>
+                <p>How it works</p>
+                <p>Pricing</p>
+                <p>FAQs</p>
+                <p></p>
+            </nav>
         </div>
-        <div>
+        <div class="lg:flex hidden ml-[500px]">
             <button class="py-[13px] px-[35px] bg-[white] text-black text-[18px]">Login</button>
             <button class="py-[13px] px-[35px] bg-[black] text-white text-[18px]">Sign Up</button>
         </div>
+        <div><img class="lg:hidden block" src="./forimg/menu.png" alt=""></div>
     </header>
+
+
+    <section class="flex max-w-[1250px]  m-auto justify-evenly items-center">
+        <div class="flex flex-col lg:w-[500px] lg:h-[550px]  justify-evenly">
+            <h1 class="lg:text-[50px] lg:font-[400]">Always Track &
+                Analyze Your Business
+                Statistics To Succeed.</h1>
+            <p class="lg:text-[#151515] lg:text-[18px]">A better way to manage your sales, team, clients & marketing
+                — on a single platform. Powerful, affordable & easy.</p>
+                <div class="flex">
+                <input class="py-[13px] pl-[15px]  bg-[#ffffff] text-black border-[1px] text-[18px]"     type="text" placeholder="Enter your email">
+                <button class="py-[13px] px-[35px] bg-[black] text-white text-[18px]">Get started</button>
+                </div>
+                <div class="flex gap-[30px]">
+                    <img src="./forimg/m_visa.png" alt="">
+                    <img src="./forimg/m_mastercard.png" alt="">
+                    <img src="./forimg/m_paypall.png" alt="">
+                </div>
+        </div>
+        <div><img src="./forimg/Illustration_1.png" alt=""></div>
+    </section>
 </body>
+
 </html>
